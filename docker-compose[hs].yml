@@ -29,16 +29,20 @@ services:
    ELASTICSEARCH_URL: http://elasticsearch:9200
    server.host: 0.0.0.0
    logging.dest: /opt/apl/avi/log
-  rabbitmq:
-   image: rabbitmq
-   volumes:
-    - rabbitdata1:/usr/share/rabbitmq/data
-   networks:
-    - esnet
+ rabbitmq:
+  image: rabbitmq
+  volumes:
+   - rabbitdata1:/usr/share/rabbitmq/data
+  networks:
+   - esnet
+  environment:
+   --hostname hsaugusto
 volumes:
  esdata1:
   driver: local 
  kibdata1:
+  driver: local
+ rabbitdata1:
   driver: local
 networks:
  esnet:
