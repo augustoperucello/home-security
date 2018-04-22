@@ -1,0 +1,5 @@
+Applications to be developed:
+
+HOMESERVER: .netCORE server for listening requests from RPI and posting to broker
+
+RPI: .netCORE application for sending requests to the home server EventManagerMicroservice event appears.
