@@ -1,0 +1,16 @@
+MODEL DOCUMENT FOR EventManagerMicroservice:
+
+datetime: [datetime]
+type: [irhit, unlock, sound, movement]
+ID: numeric [unique id]
+seen: boolean [0 false 1 true]
+
+
+JSON:
+
+{
+  "datetime": null,
+  "type": "irhit",
+  "ID": "1345",
+  "seen": false
+}
